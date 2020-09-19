@@ -54,13 +54,13 @@ function game()
     let pp=0
     let cp=0
     let i
-    for (i=0; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
-        const player = prompt("rock, paper, scissors").toLowerCase()
+        const player = prompt("rock paper scissor").toLowerCase()
         const computer = computerPlay()
         const resul = playRound(player,computer)
         console.log("Computer choose "+ computer)
-        console.log("You choose "+player)
+        console.log("You choose " + player)
         if (resul=="You Lose")
         {
             cp++
@@ -76,11 +76,11 @@ function game()
             console.log("tie")
         }
     }
-    if (pp>cp)
+    if (pp > cp)
     {
         console.log("You are The winner")
     }
-    else if( pp<cp)
+    else if(pp < cp)
     {
         console.log("You lose this round")
     }
